@@ -24,4 +24,6 @@ Route::get('/', function () {
 //     echo "Página Home";
 // });
 
-Route::get('/series',[SeriesController::class, 'listarsereies']);
+Route::get('/series',[SeriesController::class, 'index']);
+
+Route::get('/series/criar',[SeriesController::class, 'create']);
