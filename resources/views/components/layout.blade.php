@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{$title}}</title>
+
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
-    <center><h1>Página {{$title}}</h1></center>
-    {{$slot}}
+
+    <header id='header'>Sistema de Cadastros de Séries</header>
+    <center><h3>Página {{$title}}</h3></center>
+    <div class="content">
+        {{$slot}}
+    </div>
+    
 </body>
 </html>
